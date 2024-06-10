@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-input {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .login-button {
+            display: inline-block;
+            width: 100%;
+            padding: 5px 20px;
+            border-radius: 20px;
+            background-color: #3578e5;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .login-button:hover {
+            background-color: #3bb143;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #3bb143; /* Cor verde esmeralda */
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+            margin-top: auto;
+            padding: 20px 0;
+        }
+
+        /* Responsivo */
+        @media screen and (max-width: 480px) {
+            .login-container {
+                padding: 20px;
+            }
+
+            .login-button {
+                padding: 10px 0;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>CodyLingo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                    <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                    <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                    <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./assets/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+
+            
+        </div>
+    </header>
+    <div class="content">
+      <div class="login-container">
+          <h2>Login</h2>
+          <input type="email" class="login-input" placeholder="Email">
+          <input type="password" class="login-input" placeholder="Senha">
+          <a href="index.html" class="login-button">Entrar</a>
+          <p>Ou entre com:</p>
+          <div class="social-icons">
+              <a href="https://github.com/login/oauth/authorize?client_id=SEU_CLIENT_ID_AQUI"><i class="fab fa-github"></i></a>
+              <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+              <a href="https://accounts.google.com"><i class="fab fa-google"></i></a>
+              <a href="https://www.apple.com"><i class="fab fa-apple"></i></a>
+              <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+
+
+    <script src="script.js"></script>
+    <footer>
+        <p>Developed by Blue7 Team ©2024 CodyLingo</p>
+    </footer>   
+</body>
+
+</html>

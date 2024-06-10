@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>CodyLingo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                    <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                    <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                    <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./assets/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <h1>Fale conosco</h1>
+    <main class="container-principal">
+        <div class="container">
+        
+            <form id="contactForm" action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>     
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p>Developed by Blue7 Team ©2024 CodyLingo</p>
+    </footer>
+</body>
+</html>

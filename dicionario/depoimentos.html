@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Depoimentos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>CodyLingo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                    <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                    <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                    <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./assets/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <h1>Depoimentos dos Usuários</h1>
+    <main>
+        <section class="testimonials">
+            <div class="testimonial">
+                <img src="./assets/depoimento1.png" alt="Ícone 1">
+                <h2>"Muito útil"<i class="fas fa-quote-left"></i></h2>
+                <p>"CodyLingo é uma ferramenta muito útil para quem está começando a programar na
+                    faculdade. Sempre que tenho dúvidas, eu consigo encontrar a resposta aqui."
+                    <br>- João Pedro - Estudante de Análise e Desenvolvimento de Sistemas</p>
+            </div>
+            <div class="testimonial">
+                <img src="./assets/depoimento2.png" alt="Ícone 2">
+                <h2>"Inovador"<i class="fas fa-quote-left"></i></h2>
+                <p>"Eu amo a ideia de CodyLingo. É uma ferramenta inovadora que ajuda aos estudantes a
+                     aprender e crescer no mundo da programação."<br>- Maria Clara - Sistema da Informação</p>
+            </div>
+            <div class="testimonial">
+                <img src="./assets/depoimento3.png" alt="Ícone 3">
+                <h2>"Excelente"<i class="fas fa-quote-left"></i></h2>
+                <p>"CodyLingo é simplesmente excelente! Me ajudou muito a entender conceitos complexos de
+                    programação de uma maneira fácil e acessível."<br>- José Silva - Desenvolvedor Junior em
+                    Java</p>
+            </div>
+            <div class="testimonial">
+                <img src="./assets/depoimento4.png" alt="Ícone 4">
+                <h2>"Impressionante"<i class="fas fa-quote-left"></i></h2>
+                <p>"Estou impressionado com a qualidade e a variedade de recursos oferecidos pelo CodyLingo.
+                     Recomendo a todos os academicos."<br>- Ana Souza - Estudante de Engenharia de Software</p>
+            </div>
+        </section>
+        <!-- Botão para mostrar próximo depoimento -->
+        <div class="testimonials-show-more">
+            <button class="show-more-button" onclick="showNextTestimonial()">Mostrar próximo</button>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+    <footer>
+        <p>Developed by Blue7 Team ©2024 CodyLingo</p>
+    </footer>
+</body>
+</html>
+<!--Todas as imagens dos DEPOIMENTOS foram BAIXADAS do SITE https://br.freepik.com/-->

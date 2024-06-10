@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+
+    <title>Dicionário</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>CodyLingo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                    <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                    <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                    <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./assets/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <h1>Vocabulário do Programador</h1>
+    <main>
+       
+        <div class="container">
+            <h1>Pesquisar Palavra</h1>
+            <div class="language-selector">
+                <label for="language-select">Selecionar Idioma:</label>
+                <select id="language-select">
+                    <option value="pt">Português</option>
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <input type="text" id="search-input" placeholder="Digite uma palavra...">
+            <div class="buttons">
+                <button id="search-button">Pesquisar</button>
+                <button id="clear-button">Limpar</button>
+                <button id="speak-button" disabled>Falar</button> 
+            </div>
+            <div id="result" class="result">
+                
+            </div>
+        </div>
+    
+    </main>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+
+    <footer>
+        <p>Developed by Blue7 Team ©2024 CodyLingo</p>
+    </footer>    
+</body>
+</html>

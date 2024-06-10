@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Profissão</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header, footer {
+            width: 100%;
+        }
+
+        #content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            padding-bottom: 50px; 
+        }
+
+        #result img {
+            max-width: 50%;
+            height: auto;
+            margin: 0 auto; 
+            display: block; 
+        }
+
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            select, button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>CodyLingo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                    <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                    <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                    <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./assets/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <div class="container">
+            <h1>Desenvolvedor</h1>
+            <select id="profissaoSelect" class="form-control">
+                <option value="frontend">Desenvolvedor Frontend</option>
+                <option value="backend">Desenvolvedor Backend</option>
+                <option value="fullstack">Desenvolvedor Fullstack</option>
+                <option value="ia_ml">Especialista em Inteligência Artificial e Machine Learning</option>
+                <option value="cientista_dados">Cientista de Dados</option>
+                <option value="devops">DevOps</option>
+                <option value="mobile">Desenvolvedor Mobile</option>
+                <option value="robotica">Engenheiro de Robótica</option>
+                <option value="cloud_computing">Especialista de Cloud Computing</option>
+                <option value="ciberseguranca">Especialista de Cibersegurança</option>
+                <option value="software">Desenvolvedor de Software</option>
+                <option value="arquiteto_infra">Arquiteto de Redes e Infraestrutura</option>
+                <option value="design_ux_ui">Especialista em Design e UX/UI</option>
+                <option value="analista_e_desenvolvedor_de_sistemas">Analista e Desenvolvedor de Sistemas</option>
+                <option value="analista_de_sistemas">Analista de Sistemas de Informação</option>
+            </select>
+            <button onclick="searchBySelection()" class="btn btn-primary btn-pill">Pesquisar</button>
+            <button onclick="clearResult()" class="btn btn-secondary btn-pill">Limpar</button>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>       
+    <footer>
+        <p>Developed by Blue7 Team ©2024 CodyLingo</p>
+    </footer>
+</body>
+</html>
+<!--Todos os vetores(imagens) foram BAIXADOS do SITE https://br.freepik.com/-->

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Início</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            align-items: center;
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 500px;
+            overflow: hidden;
+            text-align: center; 
+            flex: 1; 
+        }
+
+        .text {
+            padding: 30px;
+        }
+
+        .text h1 {
+            font-size: 25px;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .text p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .text span {
+            color: #ff6600;
+            font-weight: 300;
+        }
+
+        .image {
+            margin-top: 20px; 
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block; 
+            margin: 0 auto; 
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+
+        .button a {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: #ff6600;
+            color: #fff;
+            font-size: 12px;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button :hover{
+            color: #FFB000;
+        }
+    
+    @media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text, .image {
+        width: 100%;
+    }
+    .text {
+        padding: 30px 20px;
+        text-align: justify;
+    }
+    .text h1 {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>CodyLingo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                    <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                    <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                    <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                    
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./assets/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="profissao.html" class="nav-link">Profissão</a></li>
+                <li class="nav-item"><a href="dicionario.html" class="nav-link">Dicionário</a></li>
+                <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="text">
+            <h1>Bem-vindo</h1>
+            <p>Eu sou <span>CodyLingo</span>, o seu amigo que ajudará você a sanar suas dúvidas com as palavras reservadas usadas na programação em C e Java. Posso mostrar significados e exemplos em português, espanhol e inglês. Além disso, vou apresentar as profissões de desenvolvimento de software.</p>
+            <div class="button">
+                <a href="dicionario.html">Vamos começar!</a>
+            </div>
+        <div class="image">
+            <img src="./assets/inicial2.jpg" alt="Imagem de boas-vindas">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>Developed by Blue7 Team ©2024 CodyLingo</p>
+    </footer>   
+</body>
+</html>
+<!--O vetor (imagem) foi BAIXADO do SITE https://br.freepik.com/-->
